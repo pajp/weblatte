@@ -1,0 +1,3 @@
+[submodule "WEB-INF/lattekom"]
+	path = WEB-INF/lattekom
+	url = git@github.com:pajp/lattekom.git
