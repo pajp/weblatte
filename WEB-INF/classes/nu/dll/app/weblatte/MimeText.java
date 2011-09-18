@@ -87,13 +87,6 @@ public class MimeText extends nu.dll.lyskom.Text implements javax.activation.Dat
                 }
 
                 Debug.println("loaded RFC822 headers into " + rfc822headers);
-                @SuppressWarnings("unchecked")
-                Enumeration<Header> e = rfc822headers.getAllHeaders();
-                while (e.hasMoreElements()) {
-                    Header h = (Header) e.nextElement();
-                    Debug.println("rfc822 header name: " + h.getName()
-                            + ", value: " + h.getValue());
-                }
 
                 ContentType preambleContentType = new ContentType(
                         rfc822headers.getHeader("Content-Type", null));
