@@ -9,7 +9,7 @@ This is a WWW-based LysKOM client written in Java using JSP.
 
 Clone the Weblatte repository and set up its submodule:
 
-$ git clone git@github.com:pajp/weblatte.git
+$ git clone git://github.com/pajp/weblatte.git
 $ cd weblatte/
 $ git submodule init
 $ git submodule update
