@@ -5,8 +5,8 @@
     static boolean vemArVem = Boolean.getBoolean("weblatte.vem-ar-vem");
     static File tempDir = new File(System.getProperty("weblatte.temp-dir", "/tmp"));
     static String baseHost = System.getProperty("weblatte.base-host", "kom.dll.nu");
-    static String basePath = System.getProperty("weblatte.basepath", "/lyskom/"); // the absolute path on the webserver
-    static String appPath = System.getProperty("weblatte.webapp-path", "/lyskom/"); // the weblatte root within the web application
+    static String basePath = System.getProperty("weblatte.basepath", "/"); // the absolute path on the webserver
+    static String appPath = System.getProperty("weblatte.webapp-path", "/"); // the weblatte root within the web application
     static {
         Debug.println("Weblatte configuration: basePath: " + basePath + ", appPath: " + appPath);
     }
