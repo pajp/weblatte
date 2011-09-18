@@ -32,6 +32,16 @@ $ bin/httpd.sh
 
 Browse to http://localhost:8080/ and enjoy!
 
+If you do not wish to install Weblatte in the web server root, you
+need to set the system property "weblatte.basepath" to the path of the
+Weblatte application. In Resin that can be done using the
+"system-property" directive like this:
+      <system-property weblatte.basepath="/dev/"/>
+
+You can also set system properties for example using the -D command
+line argument to the Java interpreter.
+
+
 * License
 
 The license of this the "MIT License". Put shortly, you can do
