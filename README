@@ -5,6 +5,32 @@
 
 This is a WWW-based LysKOM client written in Java using JSP.
 
+* How to set up our own Weblatte instance:
+
+Clone the Weblatte repository and set up its submodule:
+
+$ git clone git@github.com:pajp/weblatte.git
+$ cd weblatte/
+$ git submodule init
+$ git submodule update
+
+Install a JSP-capable application server such as Resin:
+
+$ cd
+$ tar xf Downloads/resin-3.1.12.tar
+$ cd resin-3.1.12/
+$ vi conf/resin.conf
+
+Configure a Resin web app to point to Weblatte, for example the root web app
+by changing this:
+      <web-app id="/" root-directory="webapps/ROOT"/>
+into this:
+      <web-app id="/" root-directory="../weblatte"/>
+
+Start Resin:
+$ bin/httpd.sh
+
+Browse to http://localhost:8080/ and enjoy!
 
 * License
 
