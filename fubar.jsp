@@ -20,10 +20,9 @@
 	om du vill forsätta läsa LysKOM. Jag beklagar olägenheten. Om du vill får du gärna
 	rapportera felet till LatteKOM-utvecklarna. För att göra det, kopiera all text i 
 	rutan nedanför, och gå sedan till
-	<a href="http://sourceforge.net/tracker/?func=add&group_id=10071&atid=110071">
-	bug-trackern på SourceForge</a>, där du väljer "weblatte" vid rubriken "Category",
-	och därefter klistrar in informationen från denna sida i rutan för "Detailed 
-	Descrption", och klickar slutligen på "SUBMIT". Skriv gärna även
+	<a href="https://github.com/pajp/weblatte/issues">
+	bug-trackern på GitHub</a>, där du klistrar in informationen från denna sida i rutan 
+        och klickar slutligen på "Submit new issue". Skriv gärna även
 	vad du gjorde vid tillfället för felmeddelandet och annat som du tror kan vara 
 	relevant för att vi ska lyckas återskapa det.
     </p>
