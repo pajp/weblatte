@@ -250,8 +250,8 @@
 	    }
 	}
 	if (creationLoc != null) {
-%>
-	    <a href="http://maps.google.com/maps?z=16&ll=<%= creationLoc.getLatitude() %>,<%= creationLoc.getLongitude() %>">Visa på karta var texten skapades.</a><br/>
+%>          <%@ include file='mapdiv.jsp' %>
+	    <a href="javascript:showMap(<%= creationLoc.getLatitude() %>,<%= creationLoc.getLongitude() %>);">Visa på karta var texten skapades.</a><br/>
 <%
 	}
 
