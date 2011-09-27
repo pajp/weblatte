@@ -639,6 +639,7 @@ if (navigator.geolocation) {
     }
     function geotagerror(error) {
         message.innerHTML = "Det gick inte att fastställa platsinformation.";
+	document.forms[0].enableGeolocation.checked = false;
     }
     function initgeotag() {
         if (!document.forms[0].enableGeolocation.checked) {
