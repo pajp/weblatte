@@ -250,8 +250,9 @@
 	    }
 	}
 	if (creationLoc != null) {
+	    mapId = "_text_" + text.getNo();
 %>          <%@ include file='mapdiv.jsp' %>
-	    <a href="javascript:showMap(<%= creationLoc.getLatitude() %>,<%= creationLoc.getLongitude() %>);">Visa på karta var texten skapades.</a><br/>
+	    <a href="javascript:showMap(<%= creationLoc.getLatitude() %>,<%= creationLoc.getLongitude() %>, '<%= mapId %>');">Visa på karta var texten skapades.</a><br/>
 <%
 	}
 
