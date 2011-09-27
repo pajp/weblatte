@@ -624,6 +624,7 @@
 	out.println("<input type=\"hidden\" name=\"content-type\" value=\"" + 
 		parameters.get("content-type") + "\"/>");
     }
+    mapId = "_composer";
 %>
 <%@ include file='mapdiv.jsp' %>
 <script language="javascript">
@@ -635,7 +636,7 @@ if (navigator.geolocation) {
         message.innerHTML = "<table><tr><td>Longitud:</td><td><input type=text name=longitude size=20 value=\"" + position.coords.longitude + "\"></td></tr>" +
  "<tr><td>Latitud:</td><td><input type=text name=latitude size=20 value=\"" + position.coords.latitude + "\"></td></tr>"+
  "<tr><td>Precision:</td><td><input type=text name=accuracy size=20 value=\"" + position.coords.accuracy + "\"></td></tr>" + 
-"</table><br/><a href=\"javascript:showMap(" + position.coords.latitude + ", " + position.coords.longitude + ")\">(visa på karta)</a><br/>";
+"</table><br/><a href=\"javascript:showMap(" + position.coords.latitude + ", " + position.coords.longitude + ", '_composer')\">(visa på karta)</a><br/>";
 
     }
     function geotagerror(error) {

@@ -2,8 +2,8 @@
 	    		src="http://maps.googleapis.com/maps/api/js?sensor=false">
 		</script>
 		<script type="text/javascript">
-		  function showMap(lat, lng) {
-		      var mapdiv = document.getElementById("map_canvas");
+		  function showMap(lat, lng, mapid) {
+		      var mapdiv = document.getElementById("map_canvas" + (mapid ? mapid : ""));
 		      mapdiv.style.setProperty('height', '30%');
 		      mapdiv.style.setProperty('width', '40%');
 		      mapdiv.style.setProperty('visibility', 'visible');
@@ -18,4 +18,4 @@
   		  }
 
 	 	</script>
-	    <div id="map_canvas" style="width: 0px; height: 0px; visibility: hidden;"></div>
+	    <div id="map_canvas<%= mapId %>" style="width: 0px; height: 0px; visibility: hidden;"></div>

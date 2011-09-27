@@ -10,6 +10,7 @@
     static {
         Debug.println("Weblatte configuration: basePath: " + basePath + ", appPath: " + appPath);
     }
+    String mapId = "";
 
     public KomPreferences preferences(Session lyskom, String blockName) throws IOException, RpcFailure {
         if (lyskom == null) return null;
