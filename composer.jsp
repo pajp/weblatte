@@ -649,7 +649,7 @@ if (navigator.geolocation) {
 	     return;
 	}
         message.innerHTML = "Begär platsinformation...";
-        navigator.geolocation.getCurrentPosition(geotagPost, geotagerror, {timeout:5000});
+        navigator.geolocation.getCurrentPosition(geotagPost, geotagerror, {timeout:15000});
     }
 }
 </script>
