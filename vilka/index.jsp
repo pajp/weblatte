@@ -4,14 +4,13 @@
 <%
     boolean disconnectLast = false;
     if (lyskom == null) {
-	lyskom = new Session();
-    	lyskom.connect(Servers.defaultServer.hostname, 4894);
-	disconnectLast = true;
+        response.sendRedirect(basePath+"?error=nosession");
+	return;
     }
     //lyskom.changeWhatIAmDoing("Kollar vilkalistan");
 
     if (!disconnectLast) {
-    	if (lyskom == null || !lyskom.getLoggedIn()) response.sendRedirect("http://dll.nu/lyskom/");
+    	if (lyskom == null || !lyskom.getLoggedIn()) response.sendRedirect(basePath);
     }
     String sort = request.getParameter("sort");
     if (sort == null) sort = "";
