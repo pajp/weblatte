@@ -205,7 +205,7 @@
 			    partContentType.getParameterList().set("name", (String) partMap.get("filename"));
 			    headers.setHeader("Content-Location", (String) partMap.get("filename"));
 			    ByteArrayOutputStream bos = new ByteArrayOutputStream();
-			    OutputStream os = new Base64.OutputStream(bos);
+			    OutputStream os = new nu.dll.app.weblatte.Base64.OutputStream(bos);
 			    InputStream is = new FileInputStream(file);
 			    int read;
 			    byte[] buf = new byte[2048];
