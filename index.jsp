@@ -70,6 +70,7 @@
     String server = parameter(parameters, "server") != null ? 
 	parameter(parameters, "server") : Servers.defaultServer.hostname;
     Boolean authenticated = (Boolean) session.getAttribute("LysKOMauthenticated");
+    if (lyskom == null) authenticated = Boolean.FALSE;
     if (authenticated == null) authenticated = Boolean.FALSE;
     String error = null;
     boolean justLoggedIn = false;
